@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuaderno de Trazos · Galería de dibujos</title>
+<link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <p class="marca">Cuaderno de Trazos</p>
+  <nav class="nav-principal" aria-label="Navegación principal">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Un cuaderno abierto, lleno de trazos</h1>
+    <p class="tagline">Caricaturas, paisajes y anime, dibujados a mano y compartidos aquí como en las páginas de un cuaderno de bocetos.</p>
+  </section>
+
+  <section id="sobre-mi" class="seccion" aria-labelledby="titulo-sobre-mi">
+    <h2 id="titulo-sobre-mi">Sobre mí</h2>
+    <div class="panel-texto">
+      <p>Me llamo Lucía Fernández y mantengo este cuaderno de trazos desde mi taller en casa. Dibujo desde chica y, con los años, la caricatura, el paisaje y el anime se convirtieron en mis tres cuadernos favoritos dentro de uno solo.</p>
+      <p>Cada dibujo que ves acá está hecho con lápiz, tinta o color digital, y subido tal cual sale del cuaderno: sin filtros ni pretensiones, solo práctica constante y ganas de compartir lo que voy aprendiendo.</p>
+      <p>Si un dibujo te gusta, te trae una idea o simplemente querés saludar, la sección de contacto está siempre abierta.</p>
+    </div>
+  </section>
+
+  <section id="catalogo" class="seccion catalogo" aria-labelledby="titulo-catalogo">
+    <h2 id="titulo-catalogo">Catálogo</h2>
+    <p class="ayuda-catalogo">Elegí una categoría para ver los dibujos correspondientes.</p>
+
+    <input type="radio" name="categoria" id="cat-caricaturas" class="tab-radio" checked>
+    <label for="cat-caricaturas" class="tab-label">Caricaturas</label>
+
+    <input type="radio" name="categoria" id="cat-paisajes" class="tab-radio">
+    <label for="cat-paisajes" class="tab-label">Paisajes</label>
+
+    <input type="radio" name="categoria" id="cat-anime" class="tab-radio">
+    <label for="cat-anime" class="tab-label">Anime</label>
+
+    <div class="galerias">
+
+      <div class="galeria" id="galeria-caricaturas">
+        <figure class="obra">
+          <img src="imagenes/caricatura1.png" alt="Caricatura de un músico callejero tocando la guitarra, con rasgos exagerados y expresión alegre">
+          <figcaption>El guitarrista de la plaza</figcaption>
+        </figure>
+        <figure class="obra">
+          <img src="imagenes/caricatura2.png" alt="Caricatura de una persona leyendo un diario, con anteojos enormes y gesto de sorpresa">
+          <figcaption>Últimas noticias</figcaption>
+        </figure>
+        <figure class="obra">
+          <img src="imagenes/caricatura3.png" alt="Caricatura de un gato con cuerpo de humano vestido de mesero, sirviendo café">
+          <figcaption>El mesero felino</figcaption>
+        </figure>
+      </div>
+
+      <div class="galeria" id="galeria-paisajes">
+        <figure class="obra">
+          <img src="imagenes/paisaje1.png" alt="Paisaje de montañas al atardecer con un río serpenteando en el valle">
+          <figcaption>Valle al atardecer</figcaption>
+        </figure>
+        <figure class="obra">
+          <img src="imagenes/paisaje2.png" alt="Paisaje costero con acantilados, un faro y olas rompiendo contra las rocas">
+          <figcaption>El faro del acantilado</figcaption>
+        </figure>
+        <figure class="obra">
+          <img src="imagenes/paisaje3.png" alt="Paisaje de un bosque de pinos cubierto de nieve bajo un cielo despejado">
+          <figcaption>Invierno en el bosque</figcaption>
+        </figure>
+      </div>
+
+      <div class="galeria" id="galeria-anime">
+        <figure class="obra">
+          <img src="imagenes/anime1.png" alt="Personaje de anime con cabello largo y espada, de pie sobre un tejado bajo la luna">
+          <figcaption>Guardiana de la luna</figcaption>
+        </figure>
+        <figure class="obra">
+          <img src="imagenes/anime2.png" alt="Personaje de anime estilo shonen con uniforme escolar corriendo con energía">
+          <figcaption>Camino a la escuela</figcaption>
+        </figure>
+        <figure class="obra">
+          <img src="imagenes/anime3.png" alt="Retrato de un personaje de anime con ojos grandes y expresión serena, rodeado de flores de cerezo">
+          <figcaption>Bajo los cerezos</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion" aria-labelledby="titulo-contacto">
+    <h2 id="titulo-contacto">Contacto</h2>
+    <p class="ayuda-catalogo">¿Tenés un comentario, un pedido de dibujo o simplemente querés saludar? Escribime.</p>
+
+    <form class="formulario-contacto" action="#" method="get">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <p>Cuaderno de Trazos · Sitio hecho a mano, sin scripts, con HTML y CSS.</p>
+</footer>
+
+</body>
+</html>
