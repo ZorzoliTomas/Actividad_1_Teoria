@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web estático para publicar dibujos por categorías.">
+    <title>Galería de Dibujos</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>Galería de Dibujos</h1>
+
+            <nav class="navegacion" aria-label="Navegación principal">
+                <a href="#contacto">Contacto</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#catalogo">Catálogo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <div class="contenedor">
+                <h2 id="titulo-principal">Bienvenido a mi galería</h2>
+                <p>
+                    Un espacio para compartir dibujos organizados por categorías:
+                    caricaturas, paisajes y anime.
+                </p>
+                <a class="boton" href="#catalogo">Ver catálogo</a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion" aria-labelledby="titulo-sobre-mi">
+            <div class="contenedor">
+                <h2 id="titulo-sobre-mi">Sobre mí</h2>
+                <div class="tarjeta">
+                    <p>
+                        Soy la persona responsable de este sitio y utilizo este espacio
+                        para publicar y organizar mis dibujos. La galería reúne trabajos
+                        de distintos estilos y temáticas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalogo" class="seccion catalogo" aria-labelledby="titulo-catalogo">
+            <div class="contenedor">
+                <h2 id="titulo-catalogo">Catálogo</h2>
+                <p class="descripcion-catalogo">
+                    Elegí una categoría para ver sus dibujos.
+                </p>
+
+                <div class="categorias" aria-label="Categorías del catálogo">
+                    <a href="#caricaturas">Caricaturas</a>
+                    <a href="#paisajes">Paisajes</a>
+                    <a href="#anime">Anime</a>
+                </div>
+
+                <div class="galerias">
+                    <section id="caricaturas" class="galeria-categoria" aria-labelledby="titulo-caricaturas">
+                        <div class="titulo-categoria">
+                            <h3 id="titulo-caricaturas">Caricaturas</h3>
+                            <a href="#catalogo" class="volver">Volver a categorías</a>
+                        </div>
+
+                        <div class="galeria">
+                            <figure class="obra">
+                                <div class="marco">
+                                    <img src="imagenes/caricatura1.png"
+                                         alt="Dibujo de ejemplo de una caricatura número 1">
+                                </div>
+                                <figcaption>Caricatura 1</figcaption>
+                            </figure>
+
+                            <figure class="obra">
+                                <div class="marco">
+                                    <img src="imagenes/caricatura2.png"
+                                         alt="Dibujo de ejemplo de una caricatura número 2">
+                                </div>
+                                <figcaption>Caricatura 2</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section id="paisajes" class="galeria-categoria" aria-labelledby="titulo-paisajes">
+                        <div class="titulo-categoria">
+                            <h3 id="titulo-paisajes">Paisajes</h3>
+                            <a href="#catalogo" class="volver">Volver a categorías</a>
+                        </div>
+
+                        <div class="galeria">
+                            <figure class="obra">
+                                <div class="marco">
+                                    <img src="imagenes/paisaje1.png"
+                                         alt="Dibujo de ejemplo de un paisaje número 1">
+                                </div>
+                                <figcaption>Paisaje 1</figcaption>
+                            </figure>
+
+                            <figure class="obra">
+                                <div class="marco">
+                                    <img src="imagenes/paisaje2.png"
+                                         alt="Dibujo de ejemplo de un paisaje número 2">
+                                </div>
+                                <figcaption>Paisaje 2</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section id="anime" class="galeria-categoria" aria-labelledby="titulo-anime">
+                        <div class="titulo-categoria">
+                            <h3 id="titulo-anime">Anime</h3>
+                            <a href="#catalogo" class="volver">Volver a categorías</a>
+                        </div>
+
+                        <div class="galeria">
+                            <figure class="obra">
+                                <div class="marco">
+                                    <img src="imagenes/anime1.png"
+                                         alt="Dibujo de ejemplo de anime número 1">
+                                </div>
+                                <figcaption>Anime 1</figcaption>
+                            </figure>
+
+                            <figure class="obra">
+                                <div class="marco">
+                                    <img src="imagenes/anime2.png"
+                                         alt="Dibujo de ejemplo de anime número 2">
+                                </div>
+                                <figcaption>Anime 2</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion" aria-labelledby="titulo-contacto">
+            <div class="contenedor">
+                <h2 id="titulo-contacto">Contacto</h2>
+
+                <form class="formulario" action="#" method="post">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text"
+                               id="nombre"
+                               name="nombre"
+                               autocomplete="name"
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               autocomplete="email"
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje"
+                                  name="mensaje"
+                                  rows="6"
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>&copy; 2026 Galería de Dibujos. Sitio estático creado únicamente con HTML y CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>
